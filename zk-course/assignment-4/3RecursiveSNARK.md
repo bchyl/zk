@@ -30,3 +30,26 @@ brings several optimizations and quality-of-life improvements to circuit builder
 
 ## ref
 [Kimchi: The latest update to Mina’s proof system](https://minaprotocol.com/zh-hans/blog/kimchi-the-latest-update-to-minas-proof-system)
+
+# snapp with 3 fields
+when try array fields it get runtime err `Error: @state fields must have type State<A> for some type A`. can you help me please?
+
+then have to use 3 field elements hard code.
+the snapp code commit at:
+[snapp with 3 fields](https://github.com/bchyl/snarkyjs-workshop/commit/9e6b9e60abc9a3b14d2cb6eb6102c777fb18136c)
+
+the UT testcase result:
+```
+% npm install
+
+added 6 packages, and audited 8 packages in 2s
+
+found 0 vulnerabilities
+
+% npx tsc
+
+% node dist/1_plus_exercise_3f.js
+second update failed
+Exercise 1
+final state value 1
+```
