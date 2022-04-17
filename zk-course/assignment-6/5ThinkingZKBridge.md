@@ -1,0 +1,2 @@
+- groth16 -> plonk zk-bridge as final-project, is it ok?
+- How does Harmony Bridge stand out from so many other bridge proposals？
