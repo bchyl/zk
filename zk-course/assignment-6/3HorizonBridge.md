@@ -28,7 +28,8 @@
 [horizon readme](https://github.com/harmony-one/horizon/blob/main/README.md)
 
 ## comments contract code 
-[]()
+[little comments](https://github.com/bchyl/horizon/commit/4c57e5c225633d54962b88fdd1eee89d6b59d24a)
+
 ## MMR root
 checkpoint block for its header contains an MMR root calculated over all block headers added to the chain since the previous checkpoint block. 
 
@@ -37,6 +38,7 @@ Therefore, epoch blocks are considered checkpoint blocks.
 Updating requires O(log(N)) values along the right spine of the trie, and any binary interval range corresponds to an internal node of the trie.
 
 ## ps
+groth16 -> plonk as final-project ok?
 prover
 ```
 let mut transitions = (start_block..=opts.end_block)
@@ -70,5 +72,7 @@ export function block_verify(block_data_val) {
     var r1 = getInt32Memory0()[retptr / 4 + 1]
 }
 ```
+### ref
+plumo [prover](https://github.com/celo-org/plumo-prover) and [verifier](https://github.com/celo-org/plumo-verifier)
 
 
